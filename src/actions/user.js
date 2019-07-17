@@ -26,14 +26,12 @@ export const setNavigationState = isOpenNav => ({
 
 
 export const saveUserInfo = (user) => dispatch => {
-    debugger
 
     dispatch(error(''));
     dispatch(success(''));
 
     return axios.post(`${EndPoints.BASE_URL}${EndPoints.USER}`, user)
         .then(async ({data, status}) => {
-            debugger
             if (status > 300) {
                 return await dispatch(error(data.message));
             }
@@ -42,7 +40,6 @@ export const saveUserInfo = (user) => dispatch => {
             await dispatch(success('Saved Successfully !'));
 
         }).catch(async (fail) => {
-            debugger
             await dispatch(error(fail.message));
             console.log('error on doLoginRequest, ', fail);
         });

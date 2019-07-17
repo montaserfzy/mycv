@@ -1,0 +1,139 @@
+body {
+}
+
+code {
+}
+
+html, body {
+  font-family: Oswald, sans-serif !important;
+  font-size: 20px;
+  line-height: 20px;
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
+body {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 250ms ease-in;
+}
+
+
+@media (max-width: 768px) {
+  .navbar.horizontal-nav {
+    display: flex !important;
+    position: sticky !important;
+    top: 0px !important;
+  }
+  .navbar.vertical-nav {
+    transition: all 0.5s ease-out;
+    width:0;
+    opacity: 0;
+  }
+  .open.navbar.vertical-nav {
+    position: fixed;
+    top: 50px;
+    left: 0px;
+    z-index: 9999;
+    width:100%;
+    opacity: 1;
+    height: calc(100vh - 50px);
+  }
+  .content{
+    padding: 50px 0px 0px !important;
+    height: auto  !important;
+
+  }
+  [data-component=main-class]{
+    padding-left: 0px!important;
+    //height: auto !important;
+    height: calc(100vh - 50px) !important;
+  }
+  .container{
+    min-height: 100% !important;
+    padding-bottom: 20px !important;
+  }
+  body, html{
+    height: calc(100vh) !important;
+  }
+  .about-me .company-logo {
+    height: 100% !important;
+    width: 100% !important;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    max-height: 90px;
+    max-width: 95%;
+    object-fit: contain;
+    border-bottom: 1px solid rgba(235, 235, 235, 0.26);
+  }
+  .subpage-block-images{
+    border-bottom: 1px solid rgba(235, 235, 235, 0.66);
+  }
+  .carousel-item{
+    min-height: 800px;
+    img.d-block{
+      min-height: 800px;
+    }
+  }
+  .carousel-caption{
+    right: 10% !important;
+    left: 10% !important;
+  }
+
+  ul.social-links li a i {
+    font-size: 25px !important;
+    line-height: 43px !important;
+  }
+  ul.social-links li a {
+    width: 40px !important;
+    height: 40px !important;
+  }
+  .vertical-nav .item-link{
+    font-size: 18px !important;
+  }
+}

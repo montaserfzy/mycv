@@ -1,0 +1,32 @@
+.header {
+  .header-title {
+    display: inline-block !important;
+    position: relative;
+    margin: 0 0 0 -26px !important;
+    padding: 10px 20px 10px 78px;
+    background-color: #ffcd38;
+    color: #fff;
+    line-height: 1.1em !important;
+    font-weight: 500 !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+    min-height: 100%;
+    &:after {
+      display: block;
+      width: 10px;
+      height: 0;
+      position: absolute;
+      bottom: -10px;
+      left: 0;
+      content: "";
+      border-bottom: 10px solid #0000;
+      border-right: 10px solid #ebbd34;
+    }
+  }
+  .section-description {
+    display: inline-block;
+    margin: 0 0 0 15px;
+    color: #888;
+    font-size: 14px;
+    font-weight: 200;
+  }
+}

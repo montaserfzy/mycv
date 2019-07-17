@@ -1,0 +1,151 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.horizontal-nav{
+  position: relative;
+  width: 100vw;
+  height: 50px;
+  overflow: hidden;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-direction: row !important;
+  background-color: #fcfcfc !important;
+  border-bottom: 1px solid #ccc;
+  display: none !important;
+  .horizontal-navbar-container{
+    position: relative;
+    width: 100vw;
+    height: 50px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: row !important;
+    background-color: #fcfcfc !important;
+    padding: 10px 10px !important;
+  }
+  .nav-bar-username{
+    display: flex;
+    left:20px;
+  }
+  .nav-bar-button{
+    display: flex;
+    right:20px;
+    i{
+      font-size: 20px;
+    }
+  }
+}
+.vertical-nav {
+  position: relative;
+  width: 300px;
+  height: 100vh;
+  float: left;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column !important;
+  background-color: #fcfcfc !important;
+  padding: 10px 0px !important;
+  .navbar-container {
+    width: 100%;
+    padding-top: 50px;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .vertical-items {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    flex-direction: column !important;
+    width: 100%
+  }
+  .item-link {
+    display: block;
+    position: relative;
+    padding: 10px 20px;
+    text-align: center;
+    color: #222;
+    font-size: 15px;
+    font-weight: 700;
+    position: relative;
+    text-decoration: none;
+    border-bottom: 1px solid #f5f5f5;
+    border-top: 1px solid #f5f5f5;
+    outline: none;
+    width: 100%;
+    text-align: center;
+    background-color: #fcfcfc;
+    border-right: 3px solid transparent;
+    &:hover {
+      border-right: 3px solid #cccccc;
+    }
+    &.active {
+      border-right: 3px solid #ffcd38;
+    }
+  }
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  flex-direction: column !important;
+}
+
+.my-avatar {
+  position: relative;
+  margin: 30px auto 20px;
+  max-width: 110px;
+  text-align: center;
+  z-index: 0;
+  .avatar-logo {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    border: 2px solid #e5e5e5;
+  }
+}
+
+.my-name {
+  text-align: center;
+  h1 {
+    color: #222;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.1em;
+    margin: 15px 0 0;
+  }
+  p {
+    color: #9c9c9c;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: Oswald, Roboto, sans-serif;
+    margin: 10px 0;
+  }
+}
+
+ul.social-links li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+ul.social-links li a {
+  display: inline-block;
+  margin: 0 2px;
+  width: 28px;
+  height: 28px;
+  color: #888;
+  background-color: #eee;
+  text-align: center;
+}
+
+ul.social-links li a i {
+  font-size: 14px;
+  line-height: 28px;
+}

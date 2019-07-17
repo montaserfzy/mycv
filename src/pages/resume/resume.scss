@@ -1,0 +1,131 @@
+//@import "../../common/style.scss";
+
+.resume {
+  position: relative;
+  overflow-x: hidden;
+  padding: 0px 0px 0px 20px;
+  background: #eee;
+  height: 100vh;
+  .container {
+    padding-top: 50px;
+    background: #fff;
+    min-height: 100%;
+    max-width: 100%;
+  }
+  .content {
+    padding: 50px 60px;
+    background: #fff;
+    min-height: 100%;
+  }
+  .title {
+    color: #222;
+    font-family: Oswald, Helvetica, sans-serif;
+    line-height: 1.5em;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .section-title {
+    display: inline-block;
+    margin: 0 0 15px;
+    padding-bottom: 3px;
+    line-height: 40px;
+    font-weight: 600;
+  }
+  .block-title h3 {
+    width: auto;
+    display: inline-block;
+    border-bottom: 3px solid #ffcd38;
+  }
+
+  .timeline {
+    border-left: 1px solid #f4f9ed;
+    padding: 0px 15px;
+  }
+  .event-date {
+    display: inline-block;
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.1em;
+    margin: 0 0 3px;
+    background-color: #94cc52;
+    padding: 5px 13px 5px 18px;
+    margin-left: -21px;
+    font-size: 12px;
+    margin-top: 14px;
+
+    &:after {
+      display: block;
+      width: 5px;
+      height: 0;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      content: "";
+      border-bottom: 5px solid #0000;
+      border-right: 5px solid #8cc44b;
+    }
+  }
+  .event-name {
+    margin: 10px 0 0;
+  }
+  .event-description {
+    color: #a5a5a5;
+    margin: 0 0 4px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.45em;
+  }
+  p {
+    font-size: .875em;
+    margin: 0 0 10px;
+    font-weight: 300;
+    font-family: Roboto, monospace;
+  }
+  .skills-info h4 {
+    font-size: .875em;
+    line-height: 1.1em;
+    position: relative;
+    margin: 0 0 5px;
+  }
+  .progress {
+    background-color: #0000;
+    border: 2px solid #ffcd38;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 14px;
+    margin-bottom: 12px;
+    width: 100%;
+    .progress-bar {
+      background-color: #ffcd38;
+      border: 2px solid #fff;
+    }
+  }
+  a.button {
+    display: inline-block;
+    position: relative;
+    padding: .8em 2em;
+    margin-bottom: .25em;
+    font-size: .875em;
+    line-height: 1.2;
+    border: 0;
+    outline: 0;
+    border: 2px solid #ffcd38;
+    color: #222;
+    text-shadow: none;
+    background: 0 0;
+    border-radius: 0;
+    font-family: pt sans, Helvetica, sans-serif;
+     font-weight: 600;
+  }
+  a.button:hover, a.button:focus {
+    color: #fff !important;
+    background-color: #ffcd38;
+    text-decoration: none !important;
+  }
+}

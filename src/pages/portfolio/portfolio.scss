@@ -1,0 +1,121 @@
+//@import "../../common/style.scss";
+
+.portfolio {
+  position: relative;
+  overflow-x: hidden;
+  padding: 0px 0px 0px 20px;
+  background: #eee;
+  height: 100vh;
+  .container {
+    padding-top: 50px;
+    background: #fff;
+    min-height: 100%;
+    max-width: 100%;
+  }
+  .content {
+    padding: 50px 60px;
+    background: #fff;
+    min-height: 100%;
+  }
+  .title {
+    color: #222;
+    font-family: Oswald, Helvetica, sans-serif;
+    line-height: 1.5em;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .section-title {
+    display: inline-block;
+    margin: 0 0 15px;
+    padding-bottom: 3px;
+    line-height: 40px;
+    font-weight: 600;
+  }
+  .block-title h3 {
+    width: auto;
+    display: inline-block;
+    border-bottom: 3px solid #ffcd38;
+  }
+
+  p {
+    font-size: .875em;
+    margin: 0 0 10px;
+    font-weight: 300;
+  }
+  h5{
+    color: #222;
+    font-family: Oswald,Helvetica,sans-serif;
+    line-height: 1.5em;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  .ci-text {
+    position: relative;
+  }
+  .contact-info-block {
+    position: relative;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 10px 10px 0px 0;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+  }
+  .form-control, .form-control:focus, .has-error .form-control, .has-error .form-control:focus {
+    position: relative;
+    border: 1px solid #dfdfdf;
+    border-radius: 0;
+    display: block;
+    font-size: .875em;
+    margin: 0;
+    padding: 10px 25px 10px 12px;
+    width: 100%;
+    background: 0 0;
+    text-align: left;
+    color: inherit;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    font-family: pt sans,Helvetica,sans-serif;
+  }
+  input[type=submit], input[type=button], button, a.button {
+    display: inline-block;
+    position: relative;
+    padding: .8em 2em;
+    margin-bottom: .25em;
+    font-size: .875em;
+    line-height: 1.2;
+    border: 0;
+    outline: 0;
+    border: 2px solid #ffcd38;
+    color: #222;
+    text-shadow: none;
+    background: 0 0;
+    border-radius: 0;
+    font-family: pt sans,Helvetica,sans-serif;
+  }
+  input[type=submit]:hover, input[type=submit]:focus, input[type=button]:focus, button:hover, button:focus, a.button:hover, a.button:focus {
+    color: #fff;
+    background-color: #ffcd38;
+  }
+  .form-control-icon {
+    color: #d3d3d3;
+    font-size: 27px;
+    width: 26px;
+    margin-bottom: 10px;
+  }
+  .form-group{
+    position: relative;
+  }
+  .ci-icon{
+    width: 40px;
+    display: flex;
+  }
+  .fa-envelope{
+    font-size: 21px;
+  }
+}

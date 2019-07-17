@@ -4,12 +4,17 @@
 /node_modules
 /.pnp
 .pnp.js
-
+.idea
 # testing
 /coverage
 
+package-lock.json
+yarn.lock
+
 # production
 /build
+
+.babelrc
 
 # misc
 .DS_Store
@@ -21,3 +26,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+dist/
+

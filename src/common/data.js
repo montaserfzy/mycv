@@ -137,7 +137,7 @@ export const Experience = [
     {
         date: 'Aug 2014 – Dec 2015',
         position: 'Front End Engineer',
-        companyName: 'Homie.rent',
+        companyName: 'EtQ',
         note: 'Build tragapth mobile application and responsible on features, bugs, enhancements and technologies used in the project, collaborate with design and Backend teams to push app online'
     },
     {

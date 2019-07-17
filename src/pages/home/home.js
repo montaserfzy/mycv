@@ -1,33 +1,9 @@
 import React from "react";
 import './home.scss';
 import {connect} from 'react-redux';
-import {setUserSession} from "../../actions/user";
 
 class Home extends React.Component {
-
-    constructor(props) {
-        super(props);
-        this.state = {
-            isKaked: {
-                monty: 'monty name'
-            },
-            value: '',
-            isAbdulah: true
-        }
-
-    }
-
-    componentWillMount() {
-
-    }
-
-    componentDidMount() {
-
-    }
-
     render() {
-        let {isAbdulah, isKaked} = this.state;
-        console.log("updated session" + JSON.stringify(this.props.userReducer.session));
         return (
             <section className={'home-page'} data-component="main-class">
                 <div className={'home-bg'}>
@@ -52,7 +28,7 @@ class Home extends React.Component {
                                 <li>
                                     <span className="title">Address</span>
                                     <span className="value">
-                                        <a target='_blank' href={'https://www.google.com/maps/dir//31.8818297,35.875397/@31.8817359,35.8757015,491m/data=!3m1!1e3!4m2!4m1!3e0'}>
+                                        <a target='_blank' rel="noopener noreferrer" href={'https://www.google.com/maps/dir//31.8818297,35.875397/@31.8817359,35.8757015,491m/data=!3m1!1e3!4m2!4m1!3e0'}>
                                             Airport Street, Amman, Jordan
                                         </a>
                                     </span>
@@ -91,7 +67,7 @@ class Home extends React.Component {
 }
 
 
-const mapDispatchToProps = (dispatch, oldProps) => {
+const mapDispatchToProps = (dispatch) => {
     return {
         dispatch
     }

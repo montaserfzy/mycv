@@ -31,18 +31,6 @@ class AboutMe extends React.Component {
         this.handleSelect = this.handleSelect.bind(this);
     }
 
-
-    componentWillMount() {
-        let {center} = this.props;
-        center = {
-            lat: Companies[0].lat,
-            lng: Companies[0].lng
-        }
-    }
-
-    componentDidMount() {
-    }
-
     handleSelect = (selectedIndex, e) => {
         this.setState({
             activeIndex: selectedIndex,
@@ -56,15 +44,15 @@ class AboutMe extends React.Component {
     onMapParamsChange = ({setMapParams}) => ({center, zoom, bounds}) => {
 
         setMapParams({center, zoom, bounds});
-    }
+    };
 
 
     render() {
         const MapDiv = ({text, link}) => {
             return (
                 <div className={'marker-box'}>
-                    <a href={link} target={'_blank'}>
-                        <img src={marker} className={'marker-img'}/>
+                    <a href={link} target={'_blank'} rel="noopener noreferrer">
+                        <img src={marker} className={'marker-img'} alt={'marker'}/>
                         <div className={'marker-title'}>{text}</div>
                     </a>
                 </div>
@@ -80,7 +68,7 @@ class AboutMe extends React.Component {
                             <div className="col-sm-6 col-md-6 subpage-block">
                                 <div className="general-info">
                                     <h3 className={'title'}>I am Senior FrontEnd Engineer at&nbsp;
-                                        <a href={'http://www.homie.rent'} target={'_blank'}>Homie.rent</a></h3>
+                                        <a href={'http://www.homie.rent'} target={'_blank'} rel="noopener noreferrer">Homie.rent</a></h3>
                                     <ul className={'skills-list'}>
                                         <li>Front-end development using latest HTML5 and CSS3 techniques, backed by
                                             jQuery and other Javascript frameworks to enable optimum user experience
@@ -120,6 +108,7 @@ class AboutMe extends React.Component {
                                                     <img
                                                         className="d-block w-100"
                                                         src={blank_bg}
+                                                        alt={'blank background'}
                                                     />
                                                     <Carousel.Caption>
                                                         <img src={review.image} className={'review-image'}
@@ -144,7 +133,7 @@ class AboutMe extends React.Component {
                                 <div className="row dark-row">
                                     <div className="col-sm-4 col-md-3 subpage-block-images">
                                         <div className="client_block">
-                                            <a href="https://www.menaitech.com/en/" target="_blank">
+                                            <a href="https://www.menaitech.com/en/" target="_blank" rel="noopener noreferrer">
                                                 <img src={MenaITech} alt="MenaITech" className={'company-logo'}
                                                      width="273px" height="129px"/>
                                             </a>
@@ -153,7 +142,7 @@ class AboutMe extends React.Component {
 
                                     <div className="col-sm-4 col-md-3  subpage-block-images">
                                         <div className="client_block">
-                                            <a href="https://www.etq.com/" target="_blank">
+                                            <a href="https://www.etq.com/" target="_blank" rel="noopener noreferrer">
                                                 <img src={etq} alt={'etq'} className={'company-logo'} width="273px"
                                                      height="90px"/>
                                             </a>
@@ -162,7 +151,7 @@ class AboutMe extends React.Component {
 
                                     <div className="col-sm-4 col-md-3  subpage-block-images">
                                         <div className="client_block">
-                                            <a href="https://www.mbc.net/" target="_blank">
+                                            <a href="https://www.mbc.net/" target="_blank" rel="noopener noreferrer">
                                                 <img src={mbc} alt="mbc" className={'company-logo'} width="273px"
                                                      height="129px"/>
                                             </a>
@@ -171,7 +160,7 @@ class AboutMe extends React.Component {
 
                                     <div className="col-sm-4 col-md-3  subpage-block-images">
                                         <div className="client_block">
-                                            <a href="https://www.homie.rent/" target="_blank">
+                                            <a href="https://www.homie.rent/" target="_blank" rel="noopener noreferrer">
                                                 <img src={homie} alt="homie" className={'company-logo'} width="273px"
                                                      height="129px"/>
                                             </a>
@@ -191,6 +180,7 @@ class AboutMe extends React.Component {
                                         defaultCenter={this.props.center}
                                         defaultZoom={this.props.zoom}
                                         onChange={this.onMapParamsChange}
+                                        yesIWantToUseGoogleMapApiInternals={true}
                                         defaultOptions={{
                                             disableDefaultUI: true, // disable default map UI
                                             draggable: true, // make map draggable

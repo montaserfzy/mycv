@@ -5,17 +5,12 @@ import {AboutMe, Contact, Home, Portfolio, Resume} from '../pages/index';
 import MainNav from "../components/mainNav/mainNav";
 
 class Router extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         const isActive = to => (match, location) => location.pathname.includes(to);
         return (
             <BrowserRouter>
                 <MainNav {...this.props} />
                 <Route render={({location}) => {
-                    const {pathname, key} = location
                     return (
                         <Switch location={location}>
                             <Route exact path="/home" isActive={isActive('main')} component={Home}/>

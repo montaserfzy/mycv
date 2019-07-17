@@ -35,7 +35,6 @@ export const saveUserInfo = (user) => dispatch => {
             if (status > 300) {
                 return await dispatch(error(data.message));
             }
-            console.log(data);
             await dispatch(setUserSession(data));
             await dispatch(success('Saved Successfully !'));
 

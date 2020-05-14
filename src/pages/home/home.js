@@ -15,7 +15,7 @@ class Home extends React.Component {
                         <h2>Muntaser Almuhasen</h2>
                         <div id="rotate" className="text-rotate">
                             <div>
-                                <p className="home-page-description">Senior Frontend Engineer</p>
+                                <p className="home-page-description">Senior Frontend Mobile Engineer</p>
                             </div>
                         </div>
 

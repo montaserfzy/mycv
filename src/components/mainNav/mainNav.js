@@ -5,7 +5,7 @@ import './nav.scss';
 import {withRouter} from "react-router-dom";
 import {setNavigationState} from '../../actions/user';
 
-const logo = 'https://media.licdn.com/dms/image/C5603AQEUfPoTB_bW1A/profile-displayphoto-shrink_200_200/0?e=1568851200&v=beta&t=hUUYb41UxCQAHXg-eBQgEATe3_eclYjO1rkIOi2UPdQ';
+const logo = require('../../assets/profile/muntasir.jpeg');
 
 class MainNav extends React.Component {
     openPage(page) {
@@ -76,23 +76,23 @@ class MainNav extends React.Component {
                     <ul className="social-links">
                         <li>
                             <a className="tip social-button"
-                               href="https://www.linkedin.com/in/muntasir-almohasen-2bab8547/" title="LinkedIn"
+                               href="https://www.linkedin.com/in/mmohesen/" title="LinkedIn"
                                target='_blank'
                                rel="noopener noreferrer">
-                                <i className="fa fa-linkedin"></i>
+                                <i className="fa fa-linkedin lin"></i>
 
                             </a>
                         </li>
                         <li>
                             <a className="tip social-button" href="https://www.facebook.com/montaserfzy"
                                title="Facebook" target='_blank' rel="noopener noreferrer">
-                                <i className="fa fa-facebook-square"></i>
+                                <i className="fa fa-facebook-square fb"></i>
                             </a>
                         </li>
                         <li>
                             <a className="tip social-button" href="mailto:montaserfzy@gmail.com" title="Google Plus"
                                target='_blank' rel="noopener noreferrer">
-                                <i className="fa fa-google-plus-square"></i>
+                                <i className="fa fa-google-plus-square text-danger"></i>
                             </a>
                         </li>
                     </ul>

@@ -8,6 +8,7 @@ import MenaITech from '../../assets/icons/menaitech.png';
 import mbc from '../../assets/icons/mbc.png';
 import etq from '../../assets/icons/etq.svg';
 import homie from '../../assets/icons/homie.png';
+import cloud from '../../assets/icons/cloudSolution-2.png';
 import marker from '../../assets/icons/marker.png';
 import GoogleMapReact from 'google-map-react';
 import {Companies, Reviewer} from '../../common/data';
@@ -20,7 +21,7 @@ class AboutMe extends React.Component {
         super(props);
         this.state = {
             direction: '',
-            activeIndex: '',
+            activeIndex: 0,
             center: {
                 lat: 31.9539,
                 lng: 35.9106
@@ -67,23 +68,16 @@ class AboutMe extends React.Component {
                         <div className="row">
                             <div className="col-sm-6 col-md-6 subpage-block">
                                 <div className="general-info">
-                                    <h3 className={'title'}>I am Senior FrontEnd Engineer at&nbsp;
-                                        <a href={'http://www.homie.rent'} target={'_blank'} rel="noopener noreferrer">Homie.rent</a></h3>
+                                    <h3 className={'title'}>I am Senior Frontend Mobile Engineer at&nbsp;
+                                        <a href={'https://www.cloudsolutions.lk/'} target={'_blank'} rel="noopener noreferrer">CloudSolution</a></h3>
                                     <ul className={'skills-list'}>
-                                        <li>Front-end development using latest HTML5 and CSS3 techniques, backed by
-                                            jQuery and other Javascript frameworks to enable optimum user experience
-                                            throughout the site.
+                                        <li>Innovating healthcare system through mobile applications, responsible for creating an
+                                            end to end mobile application from design to fully functional application using Flutter,
+                                            Dart, IONIC-4, Angular-7, HTML, CSS, UX. and also responsible for,
                                         </li>
-                                        <li>Working on legacy System to get the business done</li>
-                                        <li>Build Chrome Ext. to help Homies team</li>
-                                        <li>Build Website to help marketing team</li>
-                                        <li>Build Admin Site to help the company managing rentals</li>
-                                        <li>Add new features and Bugs fixes</li>
-                                        <li>Created custom plugins, templates, and functions for our sites</li>
-                                        <li>Executed and monitored standards for user interfaces and page design
-                                            development
-                                        </li>
-                                        <li>Investigate frameworks, libraries and techniques to use on our system</li>
+                                        <li>Develop and training team,</li>
+                                        <li>Research & innovations.</li>
+                                        <li>Code reviews</li>
                                     </ul>
                                 </div>
                             </div>
@@ -95,11 +89,12 @@ class AboutMe extends React.Component {
                                 </div>
                                 <Carousel activeIndex={activeIndex}
                                           direction={direction}
-                                          interval={null}
+                                          interval={5000}
                                           wrap={true}
-                                          fade={true}
+                                          fade={false}
                                           keyboard={true}
-                                          pauseOnHover={true}
+                                          slide={true}
+                                          pause='hover'
                                           onSelect={this.handleSelect}>
                                     {
                                         Reviewer.map((review, index) => {
@@ -131,7 +126,7 @@ class AboutMe extends React.Component {
                                     <h3 className={'section-title'}>Companies</h3>
                                 </div>
                                 <div className="row dark-row">
-                                    <div className="col-sm-4 col-md-3 subpage-block-images">
+                                    <div className="col-sm-12 col-md-4 subpage-block-images">
                                         <div className="client_block">
                                             <a href="https://www.menaitech.com/en/" target="_blank" rel="noopener noreferrer">
                                                 <img src={MenaITech} alt="MenaITech" className={'company-logo'}
@@ -140,7 +135,7 @@ class AboutMe extends React.Component {
                                         </div>
                                     </div>
 
-                                    <div className="col-sm-4 col-md-3  subpage-block-images">
+                                    <div className="col-sm-12 col-md-4 subpage-block-images">
                                         <div className="client_block">
                                             <a href="https://www.etq.com/" target="_blank" rel="noopener noreferrer">
                                                 <img src={etq} alt={'etq'} className={'company-logo'} width="273px"
@@ -149,7 +144,7 @@ class AboutMe extends React.Component {
                                         </div>
                                     </div>
 
-                                    <div className="col-sm-4 col-md-3  subpage-block-images">
+                                    <div className="col-sm-12 col-md-4 subpage-block-images">
                                         <div className="client_block">
                                             <a href="https://www.mbc.net/" target="_blank" rel="noopener noreferrer">
                                                 <img src={mbc} alt="mbc" className={'company-logo'} width="273px"
@@ -158,10 +153,19 @@ class AboutMe extends React.Component {
                                         </div>
                                     </div>
 
-                                    <div className="col-sm-4 col-md-3  subpage-block-images">
+                                    <div className="col-sm-12 col-md-6 subpage-block-images">
                                         <div className="client_block">
                                             <a href="https://www.homie.rent/" target="_blank" rel="noopener noreferrer">
                                                 <img src={homie} alt="homie" className={'company-logo'} width="273px"
+                                                     height="129px"/>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <div className="col-sm-12 col-md-6 subpage-block-images">
+                                        <div className="client_block">
+                                            <a href="https://www.cloudsolutions.lk/" target="_blank" rel="noopener noreferrer">
+                                                <img src={cloud} alt="homie" className={'company-logo'} width="100%"
                                                      height="129px"/>
                                             </a>
                                         </div>
@@ -232,7 +236,7 @@ const mapStateToProps = ({userReducer}) => {
             lat: parseFloat(Companies[0].lat),
             lng: parseFloat(Companies[0].lng)
         },
-        zoom: 13,
+        zoom: 4,
         bounds: ''
     }
 };

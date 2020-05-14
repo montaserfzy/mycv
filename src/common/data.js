@@ -1,27 +1,31 @@
+const tamer = require('../assets/profile/tamer.jpeg');
+const ahmad = require('../assets/profile/ahmad.jpeg');
+const fateen = require('../assets/profile/fateen.jpeg');
+const hashim = require('../assets/profile/hashim.jpeg');
 export const Reviewer = [
     {
         name: 'Tamer Qtaish',
         position: 'CTO at homie.rent',
         note: 'Muntasir does not say much! Even when midnight strikes with everyone scrambling to deliver things in time, Muntasir quietly builds a world of front-end magic! Muntasir embodies "It\'s not about what you say, its about what you do." Technically Muntasir is a rare talent with many skills and always a solid team member to relay on for advice and help',
-        image: 'https://media.licdn.com/dms/image/C5603AQHTf1ovYLdFpA/profile-displayphoto-shrink_100_100/0?e=1568851200&v=beta&t=yOZjhMxt8AxPnX0RTFaSWNS-z2cE7BMUTWvT9K1rKrQ'
+        image: tamer
     },
     {
         name: 'Ahmad Al Tamimi',
         position: 'Senior Software Engineer at CASHU',
         note: 'I worked with Montaser for more than two years, he is one of the most creative, hard working professionals I have worked with during my career. His passion to software development and his self-learning skills are a key drive in the success of any product he works on. I believe Montaser will enrich any team he joins.',
-        image: 'https://media.licdn.com/dms/image/C5603AQHEHw8qeY4fkQ/profile-displayphoto-shrink_100_100/0?e=1568851200&v=beta&t=BeBZ45xVpnASKnBvQJBtoC7oIGqnqNKpx_VaYwj9stE'
+        image: ahmad
     },
     {
         name: 'Fateen AL Zu\'bi',
         position: 'Full Stack Senior Wep Application Developer',
         note: 'Montaser is a talented Web Developer and great to work with. Not only is he an amazing designer, but he has ingenious web skills with an eye for detail. Montaser is very innovative and always looking for new solutions and fresh ideas that can advance his knowledge to exceed his client’s expectations and goals. Montaser a fun person to work with, and is always helpful and insightful. He is a passionate designer and always seems to have great awareness of new creative strategies and technology, which makes him a great asset to any company.',
-        image: 'https://media.licdn.com/dms/image/C4E03AQGv-38Q7uLKIQ/profile-displayphoto-shrink_100_100/0?e=1568851200&v=beta&t=IGQqRni91weg2IpNoljIyvM-jCj_wHoXwXQvSv76eXc'
+        image: fateen
     },
     {
         name: 'Hashem Shmaisani (MSc,CCNA,CWTS,CEH)',
         position: 'E-learning and Training Specialist  at Alef Education, Edu-Tech, Cybersecurity, IoT, Blockchain',
-        note: 'I\'ve worked with montaser in hyper-execution as a web developer teammate he is a great PHP programmer, an excellent template editor and designer, a great team member, also he has great communication skills and helping skills, so i recommend him without reservation or hesitation to any related work and wishing him all success in his future work and development.',
-        image: 'https://media.licdn.com/dms/image/C5103AQGAakHuq06tHQ/profile-displayphoto-shrink_100_100/0?e=1568851200&v=beta&t=6Q5VMFrP-8Q9tYGO4ZXSOVv0q9FoIQ571QHLOlaeYCc'
+        note: 'I\'ve worked with Muntasir in Hyper-Execution as a web developer. Muntasir is a great PHP programmer, an excellent analyst and designer, also he has great communication skills, so i recommend him without any reservations to any similar position and wishing him all the success in his future endeavors.',
+        image: hashim
     }
 
 ];
@@ -49,7 +53,14 @@ export const Companies = [
         lng: '-0.2046893',
         name: 'Homie.rent',
         link: 'http://www.Homie.rent'
+    },
+    {
+        lat: '24.708852',
+        lng: '46.665664',
+        name: 'Dr. Suluman Alhabeeb Group - Cloud Solution',
+        link: 'https://www.cloudsolutions.lk/'
     }
+
 ];
 
 
@@ -65,6 +76,10 @@ export const Skills = [
     {
         name: 'CSS3',
         value: '90'
+    },
+    {
+        name: 'jQuery',
+        value: '95'
     },
     {
         name: 'SCSS',
@@ -88,23 +103,39 @@ export const Skills = [
     },
     {
         name: 'PhoneGap and Cordova',
-        value: '60'
-    },
-    {
-        name: 'NodeJS',
-        value: '60'
-    },
-    {
-        name: 'PHP - Codigniter',
         value: '70'
     },
     {
-        name: 'MySql',
-        value: '60'
+        name: 'NodeJS',
+        value: '50'
+    },
+    {
+        name: 'PHP - Codigniter',
+        value: '80'
+    },
+    {
+        name: 'DB MySql & Postgres',
+        value: '80'
     },
     {
         name: 'Ruby on Rails',
         value: '30'
+    },
+    {
+        name: 'Flutter',
+        value: '60'
+    },
+    {
+        name: 'VueJs',
+        value: '50'
+    },
+    {
+        name: 'Php Laravel',
+        value: '80'
+    },
+    {
+        name: 'Python',
+        value: '20'
     },
 ];
 
@@ -124,7 +155,12 @@ export const Education = [
 
 export const Experience = [
     {
-        date: 'Jan 2018 - Present',
+        date: 'Jun 2020 Present',
+        position: 'Senior Frontend Mobile Engineer',
+        companyName: 'Dr. Sulaiman Al Habib Medical Group - CloudSolution',
+        note: 'Innovating healthcare system through mobile applications, responsible for creating an end to end mobile application from design to fully functional application using Flutter, Dart, IONIC-4, Angular-7, HTML, CSS, UX.. '
+    },{
+        date: 'Jan 2018 - Dec 2019',
         position: 'Senior Frontend Engineer',
         companyName: 'Homie.rent',
         note: 'Front-end development using latest HTML5 and CSS3 techniques, backed by jQuery and other Javascript frameworks to enable optimum user experience throughout the site. '

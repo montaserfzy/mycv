@@ -26,7 +26,7 @@ class Resume extends React.Component {
         return (
             <section className={'resume'} data-component="main-class">
                 <div className={'container'}>
-                    <Header title={'Resume'} note={'+6 Years of Experience'}/>
+                    <Header title={'Resume'} note={'+8 Years of Experience'}/>
                     <div className={'content'}>
                         <div className="row">
                             <div className="col-sm-12 col-md-6 subpage-block  mb-5">
@@ -93,7 +93,7 @@ class Resume extends React.Component {
                         <div className="row mt-5">
                             <div className="col-sm-12 col-md-6 subpage-block mt-5">
                                 <div className="block-title">
-                                    <a className="button btn-send" target={'_blank'} href={'https://drive.google.com/file/d/1Hehz0TEI5z3m3ihfcUHGUMjFdgVSJ_js/view?usp=sharing'}> Open CV File</a>
+                                    <a className="button btn-send" target={'_blank'} href={'https://drive.google.com/file/d/1nFaS_1qnqDjJa_0Yi0sR2yNIGu2RAYdt/view?usp=sharing'}> Open CV File</a>
                                 </div>
                             </div>
                         </div>

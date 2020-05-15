@@ -93,7 +93,7 @@ class Resume extends React.Component {
                         <div className="row mt-5">
                             <div className="col-sm-12 col-md-6 subpage-block mt-5">
                                 <div className="block-title">
-                                    <a className="button btn-send" target={'_blank'} href={'https://drive.google.com/file/d/1nFaS_1qnqDjJa_0Yi0sR2yNIGu2RAYdt/view?usp=sharing'}> Open CV File</a>
+                                    <a className="button btn-send" target={'_blank'} href={'https://drive.google.com/file/d/17Jz4dAGGlwdTjM9ZhX3Cg-OMEjERlqVx/view'}> Open CV File</a>
                                 </div>
                             </div>
                         </div>

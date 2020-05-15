@@ -76,6 +76,14 @@ class Contact extends React.Component {
                                         <h5>Full Time Available</h5>
                                     </div>
                                 </div>
+                                <div className="contact-info-block">
+                                    <div className="ci-icon">
+                                        <i className="form-control-icon fa fa-github"></i>
+                                    </div>
+                                    <div className="ci-text">
+                                        <h5>Montaserfzy</h5>
+                                    </div>
+                                </div>
                             </div>
                             {
                                 false &&

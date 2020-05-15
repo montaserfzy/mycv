@@ -22,18 +22,6 @@ class Home extends React.Component {
                         <div className="home-page-block">
                             <ul className="info-list">
                                 <li>
-                                    <span className="title">Date of Birth</span>
-                                    <span className="value">07 Nov, 1988</span>
-                                </li>
-                                <li>
-                                    <span className="title">Address</span>
-                                    <span className="value">
-                                        <a target='_blank' rel="noopener noreferrer" href={'https://www.google.com/maps/dir//31.8818297,35.875397/@31.8817359,35.8757015,491m/data=!3m1!1e3!4m2!4m1!3e0'}>
-                                            Airport Street, Amman, Jordan
-                                        </a>
-                                    </span>
-                                </li>
-                                <li>
                                     <span className="title">E-Mail</span>
                                     <span className="value"><a href="mailto:montaserfzy@gmail.com">
                                         montaserfzy@gmail.com</a>
@@ -43,6 +31,12 @@ class Home extends React.Component {
                                     <span className="title">Skype</span>
                                     <span className="value">
                                         MMohesen
+                                    </span>
+                                </li>
+                                <li>
+                                    <span className="title">Github</span>
+                                    <span className="value">
+                                        <a href="https://github.com/montaserfzy" title={'Montaserfzy'}>Montaserfzy</a>
                                     </span>
                                 </li>
                                 <li>
@@ -56,6 +50,16 @@ class Home extends React.Component {
                                 <li>
                                     <span className="title" title='working remote'>Remote</span>
                                     <span className="value available">Available</span>
+                                </li>
+                                <li>
+                                    <span className="title">Address</span>
+                                    <span className="value">
+                                        <a target='_blank' rel="noopener noreferrer" href={'https://www.google.com/maps/dir//31.8818297,35.875397/@31.8817359,35.8757015,491m/data=!3m1!1e3!4m2!4m1!3e0'}>
+                                            Airport Street,&nbsp;
+                                            Amman,&nbsp;
+                                            Jordan
+                                        </a>
+                                    </span>
                                 </li>
                             </ul>
                         </div>
